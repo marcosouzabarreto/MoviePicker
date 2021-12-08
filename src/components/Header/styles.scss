@@ -1,0 +1,14 @@
+@import '../../common/palette.scss';
+
+.header {
+  margin-bottom: 1rem;
+
+  .title {
+    text-align: center;
+    font-size: $title;
+  }
+  .text {
+    text-align: center;
+    font-size: $text;
+  }
+}

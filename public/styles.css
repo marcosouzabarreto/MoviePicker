@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+html {
+  background-image: linear-gradient(to bottom, #801113, #38050e);
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol,
+button,
+input,
+textarea,
+select,
+div {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
