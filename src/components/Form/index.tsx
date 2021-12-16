@@ -15,14 +15,26 @@ export function MovieForm() {
         }}
       >
         {({ isSubmitting }) => (
-          <Form>
-            <Field type='field'></Field>
+          // TODO: Add Formik validation
+          <Form className='form'>
+            <div className='genre-container'>
+              <label htmlFor='genre'>Gêneros</label>
+              <Field as='select' name='genres' style={{ color: 'black' }}>
+                <option value='all-genres'>Todos os gêneros</option>
+                <option value='romantic-comedy'>Comédia romântica</option>
+                <option value='sci-fi'>Ficção Científica</option>
+                <option value='action'>Ação</option>
+                <option value='drama'>Drama</option>
+                <option value='horror'>Terror</option>
+                <option value='thriller'>Suspense</option>
+                <option value='adventure'>Aventura</option>
+              </Field>
+            </div>
             <button
               type='submit'
               disabled={isSubmitting}
               className='submit-button'
             >
-              {' '}
               Pesquisar
             </button>
           </Form>
